@@ -5,12 +5,14 @@
 //  Created by Jacek on 17/06/2022.
 //
 
-import SwiftUI
+import Foundation
+import Combine
 
 class ViewModel: ObservableObject {
-    @Published var items: [ToDoItem] 
+    @Published var items: [ToDoItem]
 
     private let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedItems")
+    private var saveSubscription: AnyCancellable?
 
     init() {
         do {
@@ -19,6 +21,11 @@ class ViewModel: ObservableObject {
         } catch {
             items = []
         }
+        saveSubscription = $items
+            .debounce(for: 5, scheduler: RunLoop.main)
+            .sink { [weak self] _ in
+                self?.save()
+            }
     }
 
     func save() {

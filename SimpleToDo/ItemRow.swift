@@ -14,6 +14,7 @@ struct ItemRow: View {
             DetailView(item: $item)
         } label: {
             Label(item.title, systemImage: item.icon)
+                .animation(nil, value: item)
         }
         .tag(item)
 
