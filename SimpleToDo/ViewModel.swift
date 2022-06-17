@@ -8,11 +8,7 @@
 import SwiftUI
 
 class ViewModel: ObservableObject {
-    @Published var items: [ToDoItem] {
-        didSet {
-            save()
-        }
-    }
+    @Published var items: [ToDoItem] 
 
     private let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedItems")
 
