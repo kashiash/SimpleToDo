@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SimpleToDoApp: App {
+    @StateObject private var model = ViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView(model: model)
+                SelectSomethingView()
+            }
         }
     }
 }

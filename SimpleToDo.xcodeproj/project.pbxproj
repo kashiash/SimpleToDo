@@ -11,6 +11,12 @@
 		A3FA05E1285C8107003EC5DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05E0285C8107003EC5DA /* ContentView.swift */; };
 		A3FA05E3285C810F003EC5DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FA05E2285C810F003EC5DA /* Assets.xcassets */; };
 		A3FA05E6285C810F003EC5DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FA05E5285C810F003EC5DA /* Preview Assets.xcassets */; };
+		A3FA05ED285C8148003EC5DA /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05EC285C8148003EC5DA /* ToDoItem.swift */; };
+		A3FA05EF285C9010003EC5DA /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05EE285C9010003EC5DA /* FileManager-DocumentsDirectory.swift */; };
+		A3FA05F1285C904B003EC5DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05F0285C904B003EC5DA /* ViewModel.swift */; };
+		A3FA05F3285CA211003EC5DA /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05F2285CA210003EC5DA /* SelectSomethingView.swift */; };
+		A3FA05F5285CA39E003EC5DA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05F4285CA39E003EC5DA /* DetailView.swift */; };
+		A3FA05F7285CA569003EC5DA /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA05F6285CA569003EC5DA /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		A3FA05E0285C8107003EC5DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A3FA05E2285C810F003EC5DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FA05E5285C810F003EC5DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3FA05EC285C8148003EC5DA /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		A3FA05EE285C9010003EC5DA /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		A3FA05F0285C904B003EC5DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A3FA05F2285CA210003EC5DA /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = SOURCE_ROOT; };
+		A3FA05F4285CA39E003EC5DA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A3FA05F6285CA569003EC5DA /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		A3FA05DD285C8107003EC5DA /* SimpleToDo */ = {
 			isa = PBXGroup;
 			children = (
+				A3FA05F0285C904B003EC5DA /* ViewModel.swift */,
 				A3FA05DE285C8107003EC5DA /* SimpleToDoApp.swift */,
+				A3FA05EC285C8148003EC5DA /* ToDoItem.swift */,
+				A3FA05EE285C9010003EC5DA /* FileManager-DocumentsDirectory.swift */,
 				A3FA05E0285C8107003EC5DA /* ContentView.swift */,
+				A3FA05F4285CA39E003EC5DA /* DetailView.swift */,
+				A3FA05F6285CA569003EC5DA /* ItemRow.swift */,
+				A3FA05F2285CA210003EC5DA /* SelectSomethingView.swift */,
 				A3FA05E2285C810F003EC5DA /* Assets.xcassets */,
 				A3FA05E4285C810F003EC5DA /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FA05F1285C904B003EC5DA /* ViewModel.swift in Sources */,
 				A3FA05E1285C8107003EC5DA /* ContentView.swift in Sources */,
 				A3FA05DF285C8107003EC5DA /* SimpleToDoApp.swift in Sources */,
+				A3FA05F7285CA569003EC5DA /* ItemRow.swift in Sources */,
+				A3FA05F5285CA39E003EC5DA /* DetailView.swift in Sources */,
+				A3FA05F3285CA211003EC5DA /* SelectSomethingView.swift in Sources */,
+				A3FA05EF285C9010003EC5DA /* FileManager-DocumentsDirectory.swift in Sources */,
+				A3FA05ED285C8148003EC5DA /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
